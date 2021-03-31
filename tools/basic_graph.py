@@ -261,6 +261,7 @@ class BasicGraph(VMobject):
     # ``edge_weight_scale * weight`` instead of the distance between the two
     # vertices as seen in the graph.
     # pre-condition: has to be weighted on all edges
+
     @staticmethod
     def decompose_graph(g, edge_weight_scale=0.5):
         out = []
@@ -321,3 +322,4 @@ class BasicGraph(VMobject):
             out.append(out_edge)
 
         return out
+
